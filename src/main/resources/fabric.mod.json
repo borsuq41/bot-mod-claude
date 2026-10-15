@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "botmod",
+  "version": "1.0.0",
+  "name": "Bot Mod",
+  "description": "Mod z GUI pod klawiszem X.",
+  "authors": ["Twoj Nick"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.botmod.BotModClient"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
