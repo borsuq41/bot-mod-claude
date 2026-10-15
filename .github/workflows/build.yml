@@ -16,13 +16,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
-
-      - name: Generate Gradle Wrapper
-        run: gradle wrapper --gradle-version 8.8
+        uses: gradle/actions/setup-gradle@v4
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: gradle build
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
